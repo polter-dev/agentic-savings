@@ -1,0 +1,18 @@
+# Personal planning (not part of the submission)
+milestones/
+
+# Secrets: API keys for Plaid and the cloud AI
+Secrets.xcconfig
+.env
+
+# Xcode
+xcuserdata/
+DerivedData/
+build/
+
+# macOS
+.DS_Store
+
+# Python (fake data generator / scorecard scripts)
+__pycache__/
+.venv/
