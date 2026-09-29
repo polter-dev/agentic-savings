@@ -1,0 +1,23 @@
+[
+  {
+    "account_id": "elena-checking",
+    "name": "Checking",
+    "type": "depository",
+    "subtype": "checking",
+    "starting_balance": 2500.0
+  },
+  {
+    "account_id": "elena-savings",
+    "name": "Savings",
+    "type": "depository",
+    "subtype": "savings",
+    "starting_balance": 6000.0
+  },
+  {
+    "account_id": "elena-card",
+    "name": "Credit Card",
+    "type": "credit",
+    "subtype": "credit card",
+    "starting_balance": 0.0
+  }
+]

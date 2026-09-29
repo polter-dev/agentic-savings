@@ -1,0 +1,23 @@
+[
+  {
+    "account_id": "jordan-checking",
+    "name": "Checking",
+    "type": "depository",
+    "subtype": "checking",
+    "starting_balance": 1200.0
+  },
+  {
+    "account_id": "jordan-tax-savings",
+    "name": "Tax Savings",
+    "type": "depository",
+    "subtype": "savings",
+    "starting_balance": 1500.0
+  },
+  {
+    "account_id": "jordan-card",
+    "name": "Credit Card",
+    "type": "credit",
+    "subtype": "credit card",
+    "starting_balance": 0.0
+  }
+]

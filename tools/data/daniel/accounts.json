@@ -1,0 +1,30 @@
+[
+  {
+    "account_id": "daniel-checking",
+    "name": "Checking",
+    "type": "depository",
+    "subtype": "checking",
+    "starting_balance": 3000.0
+  },
+  {
+    "account_id": "daniel-savings",
+    "name": "Savings",
+    "type": "depository",
+    "subtype": "savings",
+    "starting_balance": 8000.0
+  },
+  {
+    "account_id": "daniel-card-a",
+    "name": "Card A",
+    "type": "credit",
+    "subtype": "credit card",
+    "starting_balance": 0.0
+  },
+  {
+    "account_id": "daniel-card-b",
+    "name": "Card B",
+    "type": "credit",
+    "subtype": "credit card",
+    "starting_balance": 0.0
+  }
+]
