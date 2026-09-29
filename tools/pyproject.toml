@@ -6,8 +6,10 @@ readme = "README.md"
 authors = [
     { name = "polter-dev", email = "marcusruth2003@gmail.com" }
 ]
-requires-python = ">=3.9"
-dependencies = []
+requires-python = ">=3.12"
+dependencies = [
+    "faker>=37.12.0",
+]
 
 [project.scripts]
 tools = "tools:main"
