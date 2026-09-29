@@ -123,7 +123,13 @@ and discounted household goods. These purchases have `recurring: "none"` in the
 answer key: a shopping habit is not a recurring bill.
 
 Common stores cycle through three statement spellings; `true_merchant` holds the
-consistent name. `transactions.json` is a June 30 snapshot, not an event history.
+clean name supplied separately in the persona data (for example, `Netflix`,
+`T-Mobile`, `Comcast`, and `Bean Street Coffee`). Bills and income use the same
+rule as everyday purchases; refunds retain the original purchase's clean name.
+Transfers and card payments have `true_merchant: null` because they move money
+between the person's own accounts. Missing merchant truth for spending or income
+raises an error instead of falling back to the raw statement text.
+`transactions.json` is a June 30 snapshot, not an event history.
 Once a purchase posts, its pending copy is removed. The posted record can retain
 `pending_transaction_id`, referring to an old ID that is no longer in the file.
 All purchases in this fixture have posted by June 30. This follows

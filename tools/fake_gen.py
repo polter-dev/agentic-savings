@@ -19,20 +19,20 @@ PERSONAS = {
       {"account_id": "maya-card", "name": "Credit Card", "type": "credit", "subtype": "credit card", "starting_balance": 0.00}
     ],
     "bills": [
-      {"name": "OAKWOOD APARTMENTS RENT", "amount": 650.00, "day": 1},
-      {"name": "NETFLIX.COM", "amount": 15.49, "day": 3, "new_amount": 17.99, "from_month": 4},
-      {"name": "CITY TRANSIT PASS", "amount": 40.00, "day": 5},
-      {"name": "TMOBILE*AUTOPAY", "amount": 35.00, "day": 10},
-      {"name": "CITY UTILITIES PMT", "amount": 60.00, "day": 15},
-      {"name": "COMCAST XFINITY", "amount": 25.00, "day": 20}
+      {"name": "OAKWOOD APARTMENTS RENT", "true_merchant": "Oakwood Apartments", "amount": 650.00, "day": 1},
+      {"name": "NETFLIX.COM", "true_merchant": "Netflix", "amount": 15.49, "day": 3, "new_amount": 17.99, "from_month": 4},
+      {"name": "CITY TRANSIT PASS", "true_merchant": "City Transit", "amount": 40.00, "day": 5},
+      {"name": "TMOBILE*AUTOPAY", "true_merchant": "T-Mobile", "amount": 35.00, "day": 10},
+      {"name": "CITY UTILITIES PMT", "true_merchant": "City Utilities", "amount": 60.00, "day": 15},
+      {"name": "COMCAST XFINITY", "true_merchant": "Comcast", "amount": 25.00, "day": 20}
     ],
-    "paycheck": {"type": "biweekly", "name": "BEAN STREET COFFEE PAYROLL", "amount": 520.00, "first_day": date(2026, 1, 2), "every_days": 14},
+    "paycheck": {"type": "biweekly", "name": "BEAN STREET COFFEE PAYROLL", "true_merchant": "Bean Street Coffee", "amount": 520.00, "first_day": date(2026, 1, 2), "every_days": 14},
     "payment_day": 20,
     "spending": [
-      {"name": "VALUE MART", "low": 18.00, "high": 28.00, "every_weeks": 1},
-      {"name": "BEAN STREET COFFEE", "low": 2.00, "high": 4.00, "every_weeks": 1},
-      {"name": "CORNER CAFE", "low": 7.00, "high": 12.00, "every_weeks": 2},
-      {"name": "CAMPUS BOOKSTORE", "low": 12.00, "high": 22.00, "every_weeks": 8}
+      {"name": "VALUE MART", "true_merchant": "Value Mart", "low": 18.00, "high": 28.00, "every_weeks": 1},
+      {"name": "BEAN STREET COFFEE", "true_merchant": "Bean Street Coffee", "low": 2.00, "high": 4.00, "every_weeks": 1},
+      {"name": "CORNER CAFE", "true_merchant": "Corner Cafe", "low": 7.00, "high": 12.00, "every_weeks": 2},
+      {"name": "CAMPUS BOOKSTORE", "true_merchant": "Campus Bookstore", "low": 12.00, "high": 22.00, "every_weeks": 8}
     ]
   },
   "daniel": {
@@ -43,24 +43,24 @@ PERSONAS = {
       {"account_id": "daniel-card-b", "name": "Card B", "type": "credit", "subtype": "credit card", "starting_balance": 0.00}
     ],
     "bills": [
-      {"name": "HOME MORTGAGE", "amount": 1850.00, "day": 1},
-      {"name": "NETFLIX.COM", "amount": 15.49, "day": 3, "new_amount": 17.99, "from_month": 4},
-      {"name": "AUTO LOAN PAYMENT", "amount": 325.00, "day": 7},
-      {"name": "AUTO INSURANCE", "amount": 125.00, "day": 12},
-      {"name": "CITY ELECTRIC", "amount": 110.00, "day": 16},
-      {"name": "COMCAST XFINITY", "amount": 70.00, "day": 20},
-      {"name": "AMAZON PRIME MEMBERSHIP", "amount": 139.00, "day": 14, "months": [3], "account": "card-a", "recurring": "yearly"}
+      {"name": "HOME MORTGAGE", "true_merchant": "Home Mortgage", "amount": 1850.00, "day": 1},
+      {"name": "NETFLIX.COM", "true_merchant": "Netflix", "amount": 15.49, "day": 3, "new_amount": 17.99, "from_month": 4},
+      {"name": "AUTO LOAN PAYMENT", "true_merchant": "Auto Loan", "amount": 325.00, "day": 7},
+      {"name": "AUTO INSURANCE", "true_merchant": "Auto Insurance", "amount": 125.00, "day": 12},
+      {"name": "CITY ELECTRIC", "true_merchant": "City Electric", "amount": 110.00, "day": 16},
+      {"name": "COMCAST XFINITY", "true_merchant": "Comcast", "amount": 70.00, "day": 20},
+      {"name": "AMAZON PRIME MEMBERSHIP", "true_merchant": "Amazon", "amount": 139.00, "day": 14, "months": [3], "account": "card-a", "recurring": "yearly"}
     ],
-    "paycheck": {"type": "last_business_day", "name": "NORTHPOINT SERVICES PAYROLL", "amount": 5200.00},
+    "paycheck": {"type": "last_business_day", "name": "NORTHPOINT SERVICES PAYROLL", "true_merchant": "Northpoint Services", "amount": 5200.00},
     "transfer": {"amount": 500.00, "day": 2, "account": "savings"},
     "payment_day": 25,
     "spending": [
-      {"name": "VALUE MART", "low": 65.00, "high": 95.00, "every_weeks": 1, "account": "card-a"},
-      {"name": "HOME GOODS", "low": 18.00, "high": 45.00, "every_weeks": 3, "account": "card-a"},
-      {"name": "AMAZON", "low": 15.00, "high": 60.00, "every_weeks": 4, "account": "card-a"},
-      {"name": "CORNER CAFE", "low": 25.00, "high": 55.00, "every_weeks": 1, "account": "card-b"},
-      {"name": "SHELL", "low": 30.00, "high": 50.00, "every_weeks": 1, "account": "card-b"},
-      {"name": "BEAN STREET COFFEE", "low": 3.00, "high": 6.00, "every_weeks": 2, "account": "card-b"}
+      {"name": "VALUE MART", "true_merchant": "Value Mart", "low": 65.00, "high": 95.00, "every_weeks": 1, "account": "card-a"},
+      {"name": "HOME GOODS", "true_merchant": "Home Goods", "low": 18.00, "high": 45.00, "every_weeks": 3, "account": "card-a"},
+      {"name": "AMAZON", "true_merchant": "Amazon", "low": 15.00, "high": 60.00, "every_weeks": 4, "account": "card-a"},
+      {"name": "CORNER CAFE", "true_merchant": "Corner Cafe", "low": 25.00, "high": 55.00, "every_weeks": 1, "account": "card-b"},
+      {"name": "SHELL", "true_merchant": "Shell", "low": 30.00, "high": 50.00, "every_weeks": 1, "account": "card-b"},
+      {"name": "BEAN STREET COFFEE", "true_merchant": "Bean Street Coffee", "low": 3.00, "high": 6.00, "every_weeks": 2, "account": "card-b"}
     ]
   },
   "jordan": {
@@ -70,22 +70,22 @@ PERSONAS = {
       {"account_id": "jordan-card", "name": "Credit Card", "type": "credit", "subtype": "credit card", "starting_balance": 0.00}
     ],
     "bills": [
-      {"name": "RIVERSIDE APARTMENTS RENT", "amount": 950.00, "day": 1},
-      {"name": "PHOTO EDITING SOFTWARE", "amount": 19.99, "day": 4},
-      {"name": "TMOBILE*AUTOPAY", "amount": 65.00, "day": 8},
-      {"name": "AUTO INSURANCE", "amount": 145.00, "day": 12},
-      {"name": "CAMERA EQUIPMENT INSTALLMENT", "amount": 85.00, "day": 18},
-      {"name": "CLOUD STORAGE", "amount": 9.99, "day": 22}
+      {"name": "RIVERSIDE APARTMENTS RENT", "true_merchant": "Riverside Apartments", "amount": 950.00, "day": 1},
+      {"name": "PHOTO EDITING SOFTWARE", "true_merchant": "Photo Editing Software", "amount": 19.99, "day": 4},
+      {"name": "TMOBILE*AUTOPAY", "true_merchant": "T-Mobile", "amount": 65.00, "day": 8},
+      {"name": "AUTO INSURANCE", "true_merchant": "Auto Insurance", "amount": 145.00, "day": 12},
+      {"name": "CAMERA EQUIPMENT INSTALLMENT", "true_merchant": "Camera Equipment", "amount": 85.00, "day": 18},
+      {"name": "CLOUD STORAGE", "true_merchant": "Cloud Storage", "amount": 9.99, "day": 22}
     ],
-    "paycheck": {"type": "gig", "name": "DELIVERY PLATFORM PAYOUT", "first_day": date(2026, 1, 6), "every_days": 7, "low": 250.00, "high": 450.00,
-      "photography": {"name": "STRIPE TRANSFER JORDAN PHOTO", "low": 400.00, "high": 1200.00, "min_jobs": 1, "max_jobs": 3, "tax_rate": 0.25}},
+    "paycheck": {"type": "gig", "name": "DELIVERY PLATFORM PAYOUT", "true_merchant": "Delivery Platform", "first_day": date(2026, 1, 6), "every_days": 7, "low": 250.00, "high": 450.00,
+      "photography": {"name": "STRIPE TRANSFER JORDAN PHOTO", "true_merchant": "Jordan Photo", "low": 400.00, "high": 1200.00, "min_jobs": 1, "max_jobs": 3, "tax_rate": 0.25}},
     "payment_day": 15,
     "spending": [
-      {"name": "VALUE MART", "low": 35.00, "high": 55.00, "every_weeks": 1},
-      {"name": "SHELL", "low": 25.00, "high": 45.00, "every_weeks": 1},
-      {"name": "CORNER CAFE", "low": 10.00, "high": 22.00, "every_weeks": 2},
-      {"name": "BEAN STREET COFFEE", "low": 3.00, "high": 6.00, "every_weeks": 1},
-      {"name": "CAMERA SHOP", "low": 30.00, "high": 80.00, "every_weeks": 8}
+      {"name": "VALUE MART", "true_merchant": "Value Mart", "low": 35.00, "high": 55.00, "every_weeks": 1},
+      {"name": "SHELL", "true_merchant": "Shell", "low": 25.00, "high": 45.00, "every_weeks": 1},
+      {"name": "CORNER CAFE", "true_merchant": "Corner Cafe", "low": 10.00, "high": 22.00, "every_weeks": 2},
+      {"name": "BEAN STREET COFFEE", "true_merchant": "Bean Street Coffee", "low": 3.00, "high": 6.00, "every_weeks": 1},
+      {"name": "CAMERA SHOP", "true_merchant": "Camera Shop", "low": 30.00, "high": 80.00, "every_weeks": 8}
     ]
   },
   "elena": {
@@ -95,22 +95,22 @@ PERSONAS = {
       {"account_id": "elena-card", "name": "Credit Card", "type": "credit", "subtype": "credit card", "starting_balance": 0.00}
     ],
     "bills": [
-      {"name": "HOME MORTGAGE", "amount": 1450.00, "day": 1},
-      {"name": "COLLEGE TUITION PAYMENT PLAN", "amount": 800.00, "day": 5},
-      {"name": "FAMILY PHONE PLAN", "amount": 110.00, "day": 9},
-      {"name": "AUTO LOAN PAYMENT", "amount": 275.00, "day": 12},
-      {"name": "CITY ELECTRIC", "amount": 135.00, "day": 17},
-      {"name": "COMCAST XFINITY", "amount": 65.00, "day": 21}
+      {"name": "HOME MORTGAGE", "true_merchant": "Home Mortgage", "amount": 1450.00, "day": 1},
+      {"name": "COLLEGE TUITION PAYMENT PLAN", "true_merchant": "College Tuition", "amount": 800.00, "day": 5},
+      {"name": "FAMILY PHONE PLAN", "true_merchant": "Family Phone", "amount": 110.00, "day": 9},
+      {"name": "AUTO LOAN PAYMENT", "true_merchant": "Auto Loan", "amount": 275.00, "day": 12},
+      {"name": "CITY ELECTRIC", "true_merchant": "City Electric", "amount": 135.00, "day": 17},
+      {"name": "COMCAST XFINITY", "true_merchant": "Comcast", "amount": 65.00, "day": 21}
     ],
-    "paycheck": {"type": "biweekly", "name": "LAKESIDE SCHOOL DIST PAYROLL", "amount": 2300.00, "first_day": date(2026, 1, 9), "every_days": 14},
+    "paycheck": {"type": "biweekly", "name": "LAKESIDE SCHOOL DIST PAYROLL", "true_merchant": "Lakeside School District", "amount": 2300.00, "first_day": date(2026, 1, 9), "every_days": 14},
     "transfer": {"amount": 300.00, "day": 16, "account": "savings"},
     "payment_day": 25,
     "spending": [
-      {"name": "VALUE MART", "low": 75.00, "high": 110.00, "every_weeks": 1},
-      {"name": "SHELL", "low": 25.00, "high": 45.00, "every_weeks": 1},
-      {"name": "CORNER CAFE", "low": 20.00, "high": 40.00, "every_weeks": 3},
-      {"name": "BEAN STREET COFFEE", "low": 3.00, "high": 5.00, "every_weeks": 2},
-      {"name": "HOME GOODS", "low": 12.00, "high": 30.00, "every_weeks": 4}
+      {"name": "VALUE MART", "true_merchant": "Value Mart", "low": 75.00, "high": 110.00, "every_weeks": 1},
+      {"name": "SHELL", "true_merchant": "Shell", "low": 25.00, "high": 45.00, "every_weeks": 1},
+      {"name": "CORNER CAFE", "true_merchant": "Corner Cafe", "low": 20.00, "high": 40.00, "every_weeks": 3},
+      {"name": "BEAN STREET COFFEE", "true_merchant": "Bean Street Coffee", "low": 3.00, "high": 5.00, "every_weeks": 2},
+      {"name": "HOME GOODS", "true_merchant": "Home Goods", "low": 12.00, "high": 30.00, "every_weeks": 4}
     ]
   }
 }
@@ -146,11 +146,15 @@ def make_transaction(person_name, account_id, day, vendor, amount):
 
 # saves the grounded truth separately from the bank data
 def add_transaction(data, answer_key, person_name, account, day, vendor, amount, kind, recurring, true_merchant=None):
+  if kind in ("transfer", "card_payment"):
+    true_merchant = None
+  elif true_merchant is None:
+    raise ValueError(f"missing true merchant for {vendor}")
   res = make_transaction(person_name, f"{person_name}-{account}", day, vendor, amount)
   data.append(res)
   answer_key.append({
     "transaction_id": res["transaction_id"],
-    "true_merchant": true_merchant if true_merchant is not None else vendor,
+    "true_merchant": true_merchant,
     "kind": kind,
     "recurring": recurring,
     "linked_transaction_id": None
@@ -183,7 +187,7 @@ def generate(person_name, person, answer_key=None):
       amount = bill["amount"]
       if "new_amount" in bill and month >= bill["from_month"]:
         amount = bill["new_amount"]
-      add_transaction(data, answer_key, person_name, bill.get("account", "checking"), date(2026, month, bill["day"]), bill["name"], amount, "spending", bill.get("recurring", "monthly"))
+      add_transaction(data, answer_key, person_name, bill.get("account", "checking"), date(2026, month, bill["day"]), bill["name"], amount, "spending", bill.get("recurring", "monthly"), bill["true_merchant"])
 
   #collect for paychecks
   if "paycheck" in person:
@@ -193,7 +197,7 @@ def generate(person_name, person, answer_key=None):
         day = date(2026, month, calendar.monthrange(2026, month)[1])
         while day.weekday() >= 5:
           day = day - timedelta(days=1)
-        add_transaction(data, answer_key, person_name, "checking", day, paycheck["name"], -paycheck["amount"], "income", "monthly")
+        add_transaction(data, answer_key, person_name, "checking", day, paycheck["name"], -paycheck["amount"], "income", "monthly", paycheck["true_merchant"])
     elif paycheck["type"] in ("biweekly", "gig"):
       day = paycheck["first_day"]
       while day <= end_day:
@@ -203,7 +207,7 @@ def generate(person_name, person, answer_key=None):
         else:
           amount = paycheck["amount"]
           recurring = "biweekly"
-        add_transaction(data, answer_key, person_name, "checking", day, paycheck["name"], -amount, "income", recurring)
+        add_transaction(data, answer_key, person_name, "checking", day, paycheck["name"], -amount, "income", recurring, paycheck["true_merchant"])
         day = day + timedelta(days=paycheck["every_days"])
     else:
       raise ValueError("unknown paycheck type")
@@ -216,7 +220,7 @@ def generate(person_name, person, answer_key=None):
         for day_num in sorted(days):
           day = date(2026, month, day_num)
           amount = round(rng.uniform(photography["low"], photography["high"]), 2)
-          add_transaction(data, answer_key, person_name, "checking", day, photography["name"], -amount, "income", "none")
+          add_transaction(data, answer_key, person_name, "checking", day, photography["name"], -amount, "income", "none", photography["true_merchant"])
           tax_amount = round(amount * photography["tax_rate"], 2)
           transfer_pair(data, answer_key, person_name, day, tax_amount, "checking", "tax-savings", "ONLINE TRANSFER TO TAX SAVINGS", "ONLINE TRANSFER FROM CHECKING", recurring="none")
 
@@ -240,7 +244,7 @@ def generate(person_name, person, answer_key=None):
       spellings = SPELLINGS.get(vendor, [vendor])
       count = spelling_counts.get(vendor, 0)
       spelling_counts[vendor] = count + 1
-      add_transaction(data, answer_key, person_name, habit.get("account", "card"), day, spellings[count % len(spellings)], amount, "spending", "none", vendor)
+      add_transaction(data, answer_key, person_name, habit.get("account", "card"), day, spellings[count % len(spellings)], amount, "spending", "none", habit["true_merchant"])
     week = week + timedelta(days=7)
     week_num += 1
 
