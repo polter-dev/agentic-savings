@@ -40,16 +40,6 @@
     "pending_transaction_id": null
   },
   {
-    "transaction_id": "elena-0155",
-    "account_id": "elena-card",
-    "date": "2026-01-03",
-    "name": "CORNER CAFE",
-    "amount": 20.73,
-    "iso_currency_code": "USD",
-    "pending": true,
-    "pending_transaction_id": null
-  },
-  {
     "transaction_id": "elena-0063",
     "account_id": "elena-card",
     "date": "2026-01-04",
@@ -227,16 +217,6 @@
     "amount": 37.51,
     "iso_currency_code": "USD",
     "pending": false,
-    "pending_transaction_id": null
-  },
-  {
-    "transaction_id": "elena-0156",
-    "account_id": "elena-card",
-    "date": "2026-01-26",
-    "name": "TST* CORNER CAFE",
-    "amount": 21.03,
-    "iso_currency_code": "USD",
-    "pending": true,
     "pending_transaction_id": null
   },
   {
@@ -710,16 +690,6 @@
     "pending_transaction_id": null
   },
   {
-    "transaction_id": "elena-0157",
-    "account_id": "elena-card",
-    "date": "2026-03-24",
-    "name": "TST* CORNER CAFE",
-    "amount": 28.93,
-    "iso_currency_code": "USD",
-    "pending": true,
-    "pending_transaction_id": null
-  },
-  {
     "transaction_id": "elena-0097",
     "account_id": "elena-card",
     "date": "2026-03-25",
@@ -990,16 +960,6 @@
     "pending_transaction_id": null
   },
   {
-    "transaction_id": "elena-0158",
-    "account_id": "elena-card",
-    "date": "2026-04-21",
-    "name": "HOMEGOODS #081",
-    "amount": 21.04,
-    "iso_currency_code": "USD",
-    "pending": true,
-    "pending_transaction_id": null
-  },
-  {
     "transaction_id": "elena-0115",
     "account_id": "elena-card",
     "date": "2026-04-24",
@@ -1147,16 +1107,6 @@
     "amount": 25.31,
     "iso_currency_code": "USD",
     "pending": false,
-    "pending_transaction_id": null
-  },
-  {
-    "transaction_id": "elena-0159",
-    "account_id": "elena-card",
-    "date": "2026-05-10",
-    "name": "BEAN STREET COFFEE",
-    "amount": 4.94,
-    "iso_currency_code": "USD",
-    "pending": true,
     "pending_transaction_id": null
   },
   {
@@ -1497,16 +1447,6 @@
     "amount": 38.88,
     "iso_currency_code": "USD",
     "pending": false,
-    "pending_transaction_id": null
-  },
-  {
-    "transaction_id": "elena-0160",
-    "account_id": "elena-card",
-    "date": "2026-06-19",
-    "name": "HOME GOODS",
-    "amount": 18.75,
-    "iso_currency_code": "USD",
-    "pending": true,
     "pending_transaction_id": null
   },
   {

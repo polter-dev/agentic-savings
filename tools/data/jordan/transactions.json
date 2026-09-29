@@ -120,16 +120,6 @@
     "pending_transaction_id": null
   },
   {
-    "transaction_id": "jordan-0209",
-    "account_id": "jordan-card",
-    "date": "2026-01-08",
-    "name": "VALUE-MART #104",
-    "amount": 40.57,
-    "iso_currency_code": "USD",
-    "pending": true,
-    "pending_transaction_id": null
-  },
-  {
     "transaction_id": "jordan-0107",
     "account_id": "jordan-card",
     "date": "2026-01-11",
@@ -187,16 +177,6 @@
     "amount": -159.72,
     "iso_currency_code": "USD",
     "pending": false,
-    "pending_transaction_id": null
-  },
-  {
-    "transaction_id": "jordan-0211",
-    "account_id": "jordan-card",
-    "date": "2026-01-13",
-    "name": "BEANSTREET CAFE",
-    "amount": 5.34,
-    "iso_currency_code": "USD",
-    "pending": true,
     "pending_transaction_id": null
   },
   {
@@ -277,16 +257,6 @@
     "amount": -178.0,
     "iso_currency_code": "USD",
     "pending": false,
-    "pending_transaction_id": null
-  },
-  {
-    "transaction_id": "jordan-0210",
-    "account_id": "jordan-card",
-    "date": "2026-01-16",
-    "name": "TST* CORNER CAFE",
-    "amount": 12.69,
-    "iso_currency_code": "USD",
-    "pending": true,
     "pending_transaction_id": null
   },
   {
@@ -780,16 +750,6 @@
     "pending_transaction_id": null
   },
   {
-    "transaction_id": "jordan-0212",
-    "account_id": "jordan-card",
-    "date": "2026-03-06",
-    "name": "VALUE MART",
-    "amount": 45.65,
-    "iso_currency_code": "USD",
-    "pending": true,
-    "pending_transaction_id": null
-  },
-  {
     "transaction_id": "jordan-0136",
     "account_id": "jordan-card",
     "date": "2026-03-07",
@@ -917,16 +877,6 @@
     "amount": -143.88,
     "iso_currency_code": "USD",
     "pending": false,
-    "pending_transaction_id": null
-  },
-  {
-    "transaction_id": "jordan-0213",
-    "account_id": "jordan-card",
-    "date": "2026-03-16",
-    "name": "SHELL OIL #021",
-    "amount": 34.8,
-    "iso_currency_code": "USD",
-    "pending": true,
     "pending_transaction_id": null
   },
   {
@@ -1187,16 +1137,6 @@
     "amount": -43.69,
     "iso_currency_code": "USD",
     "pending": false,
-    "pending_transaction_id": null
-  },
-  {
-    "transaction_id": "jordan-0214",
-    "account_id": "jordan-card",
-    "date": "2026-04-11",
-    "name": "TST* CORNER CAFE",
-    "amount": 14.04,
-    "iso_currency_code": "USD",
-    "pending": true,
     "pending_transaction_id": null
   },
   {
@@ -1600,16 +1540,6 @@
     "pending_transaction_id": null
   },
   {
-    "transaction_id": "jordan-0215",
-    "account_id": "jordan-card",
-    "date": "2026-05-16",
-    "name": "SHELL OIL #021",
-    "amount": 44.93,
-    "iso_currency_code": "USD",
-    "pending": true,
-    "pending_transaction_id": null
-  },
-  {
     "transaction_id": "jordan-0173",
     "account_id": "jordan-card",
     "date": "2026-05-17",
@@ -1880,16 +1810,6 @@
     "pending_transaction_id": null
   },
   {
-    "transaction_id": "jordan-0216",
-    "account_id": "jordan-card",
-    "date": "2026-06-09",
-    "name": "SHELL OIL #021",
-    "amount": 35.49,
-    "iso_currency_code": "USD",
-    "pending": true,
-    "pending_transaction_id": null
-  },
-  {
     "transaction_id": "jordan-0183",
     "account_id": "jordan-card",
     "date": "2026-06-10",
@@ -1977,16 +1897,6 @@
     "amount": -403.96,
     "iso_currency_code": "USD",
     "pending": false,
-    "pending_transaction_id": null
-  },
-  {
-    "transaction_id": "jordan-0217",
-    "account_id": "jordan-card",
-    "date": "2026-06-17",
-    "name": "CORNER CAFE",
-    "amount": 17.65,
-    "iso_currency_code": "USD",
-    "pending": true,
     "pending_transaction_id": null
   },
   {
@@ -2107,16 +2017,6 @@
     "amount": 3.76,
     "iso_currency_code": "USD",
     "pending": false,
-    "pending_transaction_id": null
-  },
-  {
-    "transaction_id": "jordan-0218",
-    "account_id": "jordan-card",
-    "date": "2026-06-26",
-    "name": "VALUE-MART #104",
-    "amount": 44.39,
-    "iso_currency_code": "USD",
-    "pending": true,
     "pending_transaction_id": null
   },
   {

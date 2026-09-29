@@ -112,7 +112,7 @@ Run `python3 fake_gen.py` from `tools/`. The script writes each person's
 `transactions.json`, `answer_key.json`, and `accounts.json` under `tools/data/`.
 The seed is 42, and IDs restart for each person. Maya's bills alone produce 36
 records; adding only her paycheck produces 49. Everyday spending, transfers,
-card payments, refunds, and pending snapshots increase the final counts.
+card payments, and refunds increase the final counts.
 
 Everyday purchases vary within weekly budgets. Maya buys inexpensive groceries,
 coffee, occasional takeout, and books; she uses the bus and has no gas purchases.
@@ -123,9 +123,11 @@ and discounted household goods. These purchases have `recurring: "none"` in the
 answer key: a shopping habit is not a recurring bill.
 
 Common stores cycle through three statement spellings; `true_merchant` holds the
-consistent name. Pending records represent earlier snapshots of purchases that
-later posted. The posted record's `pending_transaction_id` identifies its pending
-snapshot. Exclude pending records when calculating spending or account balances.
+consistent name. `transactions.json` is a June 30 snapshot, not an event history.
+Once a purchase posts, its pending copy is removed. The posted record can retain
+`pending_transaction_id`, referring to an old ID that is no longer in the file.
+All purchases in this fixture have posted by June 30. This follows
+[Plaid's pending-to-posted behavior](https://plaid.com/docs/transactions/transactions-data/).
 A few full refunds are negative spending, with `linked_transaction_id` in the
 answer key pointing to the original purchase. Transfer and card payment entries
 link both ways across their accounts; they are neither income nor spending.
@@ -137,3 +139,19 @@ their payments occur in July. Depository balances equal starting balance minus
 posted amounts; credit balances equal starting balance plus posted amounts and
 represent money owed. The summary checks checking balances after every posted
 transaction, including intermediate transactions on the same date.
+
+
+`accounts.json` is an array of Plaid-shaped account objects (the `accounts` array
+from an API response, without its response envelope). `balances.current` is the
+June 30 balance, following [Plaid's account schema](https://plaid.com/docs/api/accounts/).
+Unknown `available`, `limit`, `mask`, and `official_name` values are null.
+Starting balances are generator inputs only and never appear in this app-facing file.
+
+`answer_key.json` is now an object, with `as_of`, `accounts`, `totals`, and
+`transactions` fields. Read transaction labels from `answer_key["transactions"]`
+instead of treating the root as a list. The labels match the snapshot's transaction
+IDs one for one. `accounts` contains each account's `starting_balance` on January 1
+and `ending_balance` on June 30, keyed by `account_id`. `totals.income` is positive
+net income; `totals.spending` is posted spending minus refunds. Both exclude
+transfers and card payments, and exclude pending records. These are the expected
+scorecard totals for the complete January–June period.

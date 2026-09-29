@@ -140,16 +140,6 @@
     "pending_transaction_id": null
   },
   {
-    "transaction_id": "daniel-0185",
-    "account_id": "daniel-card-b",
-    "date": "2026-01-12",
-    "name": "TST* CORNER CAFE",
-    "amount": 50.85,
-    "iso_currency_code": "USD",
-    "pending": true,
-    "pending_transaction_id": null
-  },
-  {
     "transaction_id": "daniel-0063",
     "account_id": "daniel-card-b",
     "date": "2026-01-14",
@@ -180,16 +170,6 @@
     "pending_transaction_id": null
   },
   {
-    "transaction_id": "daniel-0186",
-    "account_id": "daniel-card-b",
-    "date": "2026-01-16",
-    "name": "SHELL SERVICE STATION",
-    "amount": 35.0,
-    "iso_currency_code": "USD",
-    "pending": true,
-    "pending_transaction_id": null
-  },
-  {
     "transaction_id": "daniel-0066",
     "account_id": "daniel-card-b",
     "date": "2026-01-18",
@@ -217,16 +197,6 @@
     "amount": 78.46,
     "iso_currency_code": "USD",
     "pending": false,
-    "pending_transaction_id": null
-  },
-  {
-    "transaction_id": "daniel-0187",
-    "account_id": "daniel-card-b",
-    "date": "2026-01-19",
-    "name": "SHELL",
-    "amount": 48.53,
-    "iso_currency_code": "USD",
-    "pending": true,
     "pending_transaction_id": null
   },
   {
@@ -270,16 +240,6 @@
     "pending_transaction_id": null
   },
   {
-    "transaction_id": "daniel-0189",
-    "account_id": "daniel-card-b",
-    "date": "2026-01-26",
-    "name": "SHELL OIL #021",
-    "amount": 33.29,
-    "iso_currency_code": "USD",
-    "pending": true,
-    "pending_transaction_id": null
-  },
-  {
     "transaction_id": "daniel-0069",
     "account_id": "daniel-card-a",
     "date": "2026-01-28",
@@ -287,16 +247,6 @@
     "amount": 90.68,
     "iso_currency_code": "USD",
     "pending": false,
-    "pending_transaction_id": null
-  },
-  {
-    "transaction_id": "daniel-0188",
-    "account_id": "daniel-card-b",
-    "date": "2026-01-28",
-    "name": "TST* CORNER CAFE",
-    "amount": 50.94,
-    "iso_currency_code": "USD",
-    "pending": true,
     "pending_transaction_id": null
   },
   {
@@ -1080,16 +1030,6 @@
     "pending_transaction_id": null
   },
   {
-    "transaction_id": "daniel-0190",
-    "account_id": "daniel-card-b",
-    "date": "2026-04-13",
-    "name": "SQ *BEAN ST COFFEE",
-    "amount": 3.31,
-    "iso_currency_code": "USD",
-    "pending": true,
-    "pending_transaction_id": null
-  },
-  {
     "transaction_id": "daniel-0117",
     "account_id": "daniel-card-b",
     "date": "2026-04-14",
@@ -1157,16 +1097,6 @@
     "amount": 33.17,
     "iso_currency_code": "USD",
     "pending": false,
-    "pending_transaction_id": null
-  },
-  {
-    "transaction_id": "daniel-0191",
-    "account_id": "daniel-card-b",
-    "date": "2026-04-19",
-    "name": "SHELL",
-    "amount": 34.21,
-    "iso_currency_code": "USD",
-    "pending": true,
     "pending_transaction_id": null
   },
   {

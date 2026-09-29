@@ -2,29 +2,61 @@
   {
     "account_id": "daniel-checking",
     "name": "Checking",
+    "official_name": null,
+    "mask": null,
     "type": "depository",
     "subtype": "checking",
-    "starting_balance": 3000.0
+    "balances": {
+      "current": 12234.05,
+      "available": null,
+      "limit": null,
+      "iso_currency_code": "USD",
+      "unofficial_currency_code": null
+    }
   },
   {
     "account_id": "daniel-savings",
     "name": "Savings",
+    "official_name": null,
+    "mask": null,
     "type": "depository",
     "subtype": "savings",
-    "starting_balance": 8000.0
+    "balances": {
+      "current": 11000.0,
+      "available": null,
+      "limit": null,
+      "iso_currency_code": "USD",
+      "unofficial_currency_code": null
+    }
   },
   {
     "account_id": "daniel-card-a",
     "name": "Card A",
+    "official_name": null,
+    "mask": null,
     "type": "credit",
     "subtype": "credit card",
-    "starting_balance": 0.0
+    "balances": {
+      "current": 463.2,
+      "available": null,
+      "limit": null,
+      "iso_currency_code": "USD",
+      "unofficial_currency_code": null
+    }
   },
   {
     "account_id": "daniel-card-b",
     "name": "Card B",
+    "official_name": null,
+    "mask": null,
     "type": "credit",
     "subtype": "credit card",
-    "starting_balance": 0.0
+    "balances": {
+      "current": 388.5,
+      "available": null,
+      "limit": null,
+      "iso_currency_code": "USD",
+      "unofficial_currency_code": null
+    }
   }
 ]

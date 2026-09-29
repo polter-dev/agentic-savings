@@ -269,7 +269,7 @@ def generate(person_name, person, answer_key=None):
         account_name = account["account_id"][len(person_name) + 1:]
         transfer_pair(data, answer_key, person_name, date(2026, month, person["payment_day"]), amount, "checking", account_name, f"PAYMENT {account['name'].upper()}", "PAYMENT RECEIVED THANK YOU", kind="card_payment")
 
-  # pending records are earlier snapshots, not extra money spent
+  # simulate pending IDs, then remove their old records from the final snapshot
   keys = {entry["transaction_id"]: entry for entry in answer_key}
   for res in list(data):
     entry = keys[res["transaction_id"]]
@@ -284,6 +284,9 @@ def generate(person_name, person, answer_key=None):
     pending["pending"] = True
     res["pending_transaction_id"] = pending["transaction_id"]
 
+  data = [res for res in data if not res["pending"]]
+  posted_ids = {res["transaction_id"] for res in data}
+  answer_key[:] = [entry for entry in answer_key if entry["transaction_id"] in posted_ids]
   data.sort(key=lambda res: (res["date"], res["transaction_id"]))
   order = {res["transaction_id"]: i for i, res in enumerate(data)}
   answer_key.sort(key=lambda entry: order[entry["transaction_id"]])
@@ -312,6 +315,52 @@ def summarize(person_name, person, data):
   for account in person["accounts"]:
     print(f"  {account['name']}: ${balances[account['account_id']] / 100:.2f}")
   print(f"  lowest checking balance: ${minimum / 100:.2f}")
+  return {account_id: amount / 100 for account_id, amount in balances.items()}
+
+
+# bank-facing accounts use the balance at the end of the snapshot
+def make_accounts(person, balances):
+  accounts = []
+  for account in person["accounts"]:
+    accounts.append({
+      "account_id": account["account_id"],
+      "name": account["name"],
+      "official_name": None,
+      "mask": None,
+      "type": account["type"],
+      "subtype": account["subtype"],
+      "balances": {
+        "current": balances[account["account_id"]],
+        "available": None,
+        "limit": None,
+        "iso_currency_code": "USD",
+        "unofficial_currency_code": None
+      }
+    })
+  return accounts
+
+
+# scorecard totals count posted spending net of refunds, excluding money transfers
+def make_answer_key(person, data, answer_key, balances):
+  keys = {entry["transaction_id"]: entry for entry in answer_key}
+  totals = {"income": 0, "spending": 0}
+  for res in data:
+    if res["pending"]:
+      continue
+    kind = keys[res["transaction_id"]]["kind"]
+    if kind == "income":
+      totals["income"] -= round(res["amount"] * 100)
+    elif kind == "spending":
+      totals["spending"] += round(res["amount"] * 100)
+  return {
+    "as_of": "2026-06-30",
+    "accounts": [
+      {"account_id": account["account_id"], "starting_balance": account["starting_balance"], "ending_balance": balances[account["account_id"]]}
+      for account in person["accounts"]
+    ],
+    "totals": {kind: amount / 100 for kind, amount in totals.items()},
+    "transactions": answer_key
+  }
 
 
 if __name__ == "__main__":
@@ -320,10 +369,12 @@ if __name__ == "__main__":
     global_counter = 0
     answer_key = []
     data = generate(person_name, person, answer_key)
-    summarize(person_name, person, data)
+    balances = summarize(person_name, person, data)
+    accounts = make_accounts(person, balances)
+    answer_key = make_answer_key(person, data, answer_key, balances)
     folder = Path(__file__).resolve().parent / "data" / person_name
     folder.mkdir(parents=True, exist_ok=True)
-    for name, contents in [("transactions", data), ("answer_key", answer_key), ("accounts", person["accounts"])]:
+    for name, contents in [("transactions", data), ("answer_key", answer_key), ("accounts", accounts)]:
       with open(folder / f"{name}.json", "w") as f:
         json.dump(contents, f, indent=2)
         f.write("\n")
