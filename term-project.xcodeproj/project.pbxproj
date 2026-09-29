@@ -45,6 +45,11 @@
 			path = "term-projectUITests";
 			sourceTree = "<group>";
 		};
+		3BBCF1F0306B4AFF003E35C6 /* milestones */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = milestones;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +74,7 @@
 		3BBCF152306B4636003E35C6 = {
 			isa = PBXGroup;
 			children = (
+				3BBCF1F0306B4AFF003E35C6 /* milestones */,
 				3BBCF15D306B4636003E35C6 /* term-project */,
 				3BBCF16D306B4636003E35C6 /* term-projectTests */,
 				3BBCF177306B4636003E35C6 /* term-projectUITests */,
