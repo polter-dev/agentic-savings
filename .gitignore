@@ -16,3 +16,6 @@ build/
 # Python (fake data generator / scorecard scripts)
 __pycache__/
 .venv/
+
+# Plaid quickstart (separate repository, cloned locally)
+quickstart/

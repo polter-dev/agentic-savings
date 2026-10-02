@@ -1,13 +1,13 @@
 //
-//  term_projectTests.swift
-//  term-projectTests
+//  SedgeTests.swift
+//  SedgeTests
 //
 //  Created by Marcus Ruth on 9/28/26.
 //
 
 import Testing
 
-struct term_projectTests {
+struct SedgeTests {
 
     @Test func example() async throws {
         // Write your test here and use APIs like `#expect(...)` to check expected conditions.

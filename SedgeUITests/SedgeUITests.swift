@@ -1,13 +1,13 @@
 //
-//  term_projectUITests.swift
-//  term-projectUITests
+//  SedgeUITests.swift
+//  SedgeUITests
 //
 //  Created by Marcus Ruth on 9/28/26.
 //
 
 import XCTest
 
-final class term_projectUITests: XCTestCase {
+final class SedgeUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

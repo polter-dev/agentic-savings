@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  term-project
+//  Sedge
 //
 //  Created by Marcus Ruth on 9/28/26.
 //
